@@ -12,27 +12,26 @@ body{
 
     background-size: cover;
     height: 100%;
-    min-height: 500px;
+
 }
 
 header{
     width: 100%;
     background: #2d2d2d;
     display: flex;
-    justify-content: space-around;
-
+    justify-content: space-evenly;
 }
 
 .header-logo{
     font-size: 15pt;
     height: 100%;
     box-shadow: inset 0 -4px #FF3333FF;
-    padding: 18px 20px;
+    padding: 15px 20px;
 }
 
 #h2-txt-we{
     display: inline-block;
-    color: #ff2424;
+    color: rgb(251, 57, 61);
 }
 
 #h2-txt-memory{
@@ -54,7 +53,8 @@ header{
 }
 
 .header-start{
-    padding-top: 22px;
+    padding-top: 20px;
+
 }
 
 .header-ul{
@@ -63,16 +63,21 @@ header{
 }
 
 .do-main-information{
-    padding-top: 5.1%;
+    padding-top: 3.5%;
     display: flex;
 }
 
 .main-information{
-    background: #e5e5e5;
     width: 450px;
-    border-radius: 5px;
     height: 315px;
-    box-shadow: 5px 5px #4b4b4b;
+    /*background: #e8e8e8;
+    box-shadow: 5px 5px #4b4b4b;*/
+    background: rgba(238, 238, 238, 0.7);
+    display: inline-block;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.1),
+    0 2px 4px rgba(0,0,0,0.1),
+    0 4px 8px rgba(0,0,0,0.1),
+    0 8px 16px rgba(0,0,0,0.1);
 }
 
 .main-information:nth-child(2) {
@@ -113,7 +118,7 @@ header{
     position: absolute;
     width: 100%;
     text-align: center;
-    bottom: 3px;
+    top: 145px;
     padding: 10px 0;
     background-color: rgba(251,57,61,.8);
     color: #e8e8e8;
@@ -126,27 +131,66 @@ header{
 }
 
 .information-text h4{
-    font-weight: 420;
+    font-weight: 400;
 }
 
 .footer-div{
-    width: 46%;
-    height: 61px;
+    width: 100%;
     position: absolute;
     bottom: 0;
     display: flex;
     justify-content: center;
-    padding-left:  27%;
-
+    background: #2d2d2d;
 }
 
 .footer-div h3{
     font-size: 13pt;
-    border-radius: 5px 5px 0px 0px;
-    background: #e5e5e5;
-    color: #2d2d2d;
+    color: #cccccc;
     font-weight: 400;
-    width: 450px;
-    padding: 8px 0px;
+    padding: 20px 20px;
     text-align: center;
+    box-shadow: inset 0 -4px #FF3333FF;
+}
+
+.footer-div h3 span {
+    color: rgb(251, 57, 61);
+    font-weight: 400;
+}
+
+.main-information:hover{
+    background-color: transparent;
+    transition-duration:0s ;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.main-information:hover .information-img img{
+    opacity: 1%;
+}
+
+.main-information:hover .information-text{
+    display: none;
+}
+
+.main-information:hover .information-img h3{
+    transition-duration: 1s;
+    padding: 145px 0;
+    position: absolute;
+    top: 0;
+}
+
+.main-information:not(:hover),
+.main-information:not(:hover) .information-text,
+.main-information:not(:hover) .information-img
+{
+    transition-duration:0.5s;
+}
+
+.header-links a:hover{
+    transition-duration: 0.3s;
+    color: rgb(255, 94, 97);
+}
+
+.header-links a:not(:hover){
+    transition-duration: 0.3s;
 }

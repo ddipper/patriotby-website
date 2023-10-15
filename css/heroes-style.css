@@ -1,0 +1,324 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: "Roboto Slab", serif;
+    font-weight: 450;
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 5px 5px 5px -5px rgba(34, 60, 80, 0.2) inset;
+    background-color: #2d2d2d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #737373;
+    background-image: -webkit-gradient(linear, 0 0, 0 100%,
+    color-stop(.5, rgba(255, 255, 255, .25)),
+    color-stop(.5, transparent), to(transparent));
+}
+
+body{
+    background: #cccccc url("../img/1241qwddaw.jpg") no-repeat fixed center;
+    background-size: cover;
+}
+
+.main-persons-container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+header{
+    width: 100%;
+    background: #2d2d2d;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-logo{
+    font-size: 15pt;
+    height: 100%;
+    padding: 15px 20px;
+}
+
+#h2-txt-we{
+    display: inline-block;
+    color: rgb(251, 57, 61);
+}
+
+#h2-txt-memory{
+    display: inline-block;
+    color: #e8e8e8;
+}
+.header-links{
+    display: block;
+    height: 100%;
+}
+
+.header-links:nth-child(1)
+{
+    box-shadow: inset 0 -4px #FF3333FF;
+    height: 49px;
+}
+
+.header-links a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 14pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #cccccc;
+}
+
+.header-start{
+    padding-top: 20px;
+}
+
+.header-ul{
+    list-style: none;
+    display: flex;
+}
+
+.header-links a:hover{
+    transition-duration: 0.3s;
+    color: rgb(255, 94, 97);
+}
+
+.header-links a:not(:hover){
+    transition-duration: 0.3s;
+}
+
+a{
+    text-decoration: none;
+}
+
+.persons{
+    max-width: 1262px;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: column;
+}
+
+.person-info{
+    width: 576px;
+    max-width: 650px;
+    max-height: 224px;
+    background-color: rgba(238, 238, 238, 0.7);
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+    0 4px 8px rgba(0,0,0,0.1),
+    0 8px 16px rgba(0,0,0,0.1);
+}
+.person-header img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-top: solid #FF3333FF 2px;
+}
+
+.person-header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 30px 0px 30px;
+    align-items: center;
+}
+
+.person-header h3{
+    color: #2d2d2d;
+    font-weight: 800;
+    padding: 15px 5px;
+    box-shadow: inset 0 -3px #FF3333FF;
+    max-width: 60%;
+    text-align: center;
+}
+
+.person-header-text-sel::before{
+    content: "Селивоник Павел Акимович";
+}
+
+.person-header-text-cez::before{
+    content: "Расковинский Цезарь Сельвесторович";
+}
+
+.person-header-text-shul::before{
+    content: "Шулепов Иван Иосифович";
+}
+
+.person-header-text-artem::before{
+    content: "Артемьев Аким Петрович";
+}
+
+.person-header-text-av::before{
+    content: "Августинович Виктор Иосифович";
+}
+
+.person-header-text-chimar::before{
+    content: "Чимаров Николай Васильевич";
+}
+
+.person-header-text-alf::before{
+    content: "Мешкуть Альфонс Иванович";
+}
+
+.person-header-text-trast::before{
+    content: "Трастянко Фрамак";
+}
+
+.person-header-text-mak::before{
+    content: "Макась Мария";
+}
+.person-header-text-mis::before{
+    content: "Мисуно Алексей Герасимович";
+}
+
+.person-body{
+    padding: 20px;
+    overflow: hidden;
+    height: 80px;
+}
+
+.person-body p{
+    text-align: justify;
+    font-weight: 400;
+    color: #2d2d2d;
+    font-size: 14px;
+}
+
+.person-body::before{
+    position: absolute;
+    background-image: linear-gradient(-180deg,rgba(232,232,232,0) 0%, #e8e8e8 67%);
+    content: "";
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
+    margin: 0;
+}
+
+.person-info:nth-child(2){
+    margin-left: 110px;
+}
+
+.parsons-selection{
+    width: 100%;
+    display: flex;
+    margin-top: 60px;
+}
+
+.footer-div{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background: #2d2d2d;
+    margin-top: 60px;
+}
+
+.footer-div h3{
+    font-size: 13pt;
+    color: #cccccc;
+    font-weight: 400;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: inset 0 -4px #FF3333FF;
+}
+
+.footer-div h3 span {
+    color: rgb(251, 57, 61);
+    font-weight: 400;
+}
+
+.person-info:hover{
+    background-color: transparent;
+    transition-duration:0s;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.person-info:hover .person-header{
+    display: flex;
+    flex-direction: column;
+}
+
+.person-info:hover .person-header img{
+    display: none;
+}
+
+.person-info:hover .person-header h3{
+    width: 100%;
+    color: #e8e8e8;
+    background-color: rgba(251,57,61,.8);
+    padding: 16.5% 27%;
+    transition-duration: 0.8s;
+    box-shadow: none;
+}
+
+.person-info:hover .person-body{
+    opacity: 0;
+    position: absolute;
+}
+
+.person-info:not(:hover) .person-header h3{
+    transition-duration: 0s;
+}
+
+.person-info:not(:hover),
+.person-info:not(:hover) .person-body,
+.person-info:not(:hover) .person-header
+{
+    transition-duration:1s;
+}
+
+.person-info:not(:hover) .person-body::before {
+    transition-duration: 1s;
+}
+
+.person-info:hover .person-header-text-sel::before{
+    content: "Читать больше о Селивонике Павле Акимовиче";
+}
+
+.person-info:hover .person-header-text-cez::before{
+    content: "Читать больше о Расковинском Цезаре Сельвесторовиче";
+}
+
+.person-info:hover .person-header-text-shul::before{
+    content: "Читать больше о Шулепове Иване Иосифовиче";
+}
+
+.person-info:hover .person-header-text-artem::before{
+    content: "Читать больше об Артемьеве Акиме Петровиче";
+}
+
+.person-info:hover .person-header-text-av::before{
+    content: "Читать больше об Августиновиче Викторе Иосифовиче";
+}
+
+.person-info:hover .person-header-text-chimar::before{
+    content: "Читать больше о Чимарове Николае Васильевиче";
+}
+
+.person-info:hover .person-header-text-alf::before{
+    content: "Читать больше о Мешкуть Альфонсе Ивановиче";
+}
+
+.person-info:hover .person-header-text-trast::before{
+    content: "Читать больше о Трастянко Фрамаке";
+}
+
+.person-info:hover .person-header-text-mak::before{
+    content: "Читать больше о Макась Марие";
+}
+
+.person-info:hover .person-header-text-mis::before{
+    content: "Читать больше о Мисуно Алексее Герасимовиче";
+}
