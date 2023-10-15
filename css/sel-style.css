@@ -28,6 +28,19 @@ body{
     background-size: cover;
 }
 
+.back-arrow-body{
+    height: 64px;
+    width: 64px;
+    position: fixed;
+    z-index: 2;
+    padding: 5px;
+}
+
+.back-arrow-body img{
+    height: 100%;
+    width: 100%;
+}
+
 header{
     width: 100%;
     background: #2d2d2d;

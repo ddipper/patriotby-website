@@ -23,6 +23,19 @@
     color-stop(.5, transparent), to(transparent));
 }
 
+.back-arrow-body{
+    height: 64px;
+    width: 64px;
+    position: fixed;
+    z-index: 2;
+    padding: 5px;
+}
+
+.back-arrow-body img{
+    height: 100%;
+    width: 100%;
+}
+
 body{
     background: #cccccc url("../img/1241qwddaw.jpg") no-repeat fixed center;
     background-size: cover;
