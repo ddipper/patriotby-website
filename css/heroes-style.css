@@ -335,3 +335,114 @@ a{
 .person-info:hover .person-header-text-mis::before{
     content: "Читать больше о Мисуно Алексее Герасимовиче";
 }
+
+@media all and (max-width: 800px)
+{
+    .header-start{
+        display: none;
+    }
+
+    .persons{
+        width: 100%;
+        margin: 0 20px;
+    }
+
+    .person-header{
+        padding: 0 10px;
+    }
+
+    .footer-div h3{
+        box-shadow: none;
+    }
+
+    .person-body{
+        padding: 10px;
+    }
+
+    .person-header img{
+        border: none;
+    }
+
+    .person-body p{
+        font-size: 13px;
+    }
+
+    .person-header h3{
+        font-size: 16px;
+    }
+
+    .back-arrow-body img{
+        display: none;
+    }
+}
+
+@media all and (max-width: 1200px)
+{
+    .parsons-selection{
+        margin-top: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .person-info:nth-child(2){
+        margin-left: 0;
+    }
+
+    .person-info{
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .footer-div h3{
+        font-size: 11pt;
+    }
+
+    .footer-div{
+        margin-top: 40px;
+    }
+
+
+    .person-info:hover{
+        animation: none;
+        transition: none;
+
+    }
+
+    .person-info:hover .person-header{
+        animation: none;
+        transition: none;
+
+    }
+
+    .person-info:hover .person-header img{
+        animation: none;
+        transition: none;
+
+    }
+
+    .person-info:hover .person-header h3{
+        animation: none;
+        transition: none;
+        padding: 14.6% 20%;
+    }
+
+    .person-info:hover .person-body{
+        opacity: 0;
+        position: absolute;
+    }
+
+    .person-info:not(:hover) .person-header h3{
+        transition-duration: 0s;
+    }
+
+    .person-info:not(:hover),
+    .person-info:not(:hover) .person-body,
+    .person-info:not(:hover) .person-header
+    {
+        transition-duration:0s;
+    }
+
+    .person-info:not(:hover) .person-body::before {
+        transition-duration: 0s;
+    }
+}

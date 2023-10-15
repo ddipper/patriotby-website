@@ -172,3 +172,74 @@ header{
 #fixed-footer-div{
     position: absolute;
 }
+
+@media all and (max-width: 1300px)
+{
+    .person-header h1{
+        font-size: 30px;
+    }
+
+    .main-information{
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .person-body h3{
+        font-size: 20px;
+    }
+
+    .person-body p{
+        font-size: 15px;
+    }
+
+    .footer-div h3{
+        font-size: 11pt;
+    }
+}
+
+@media all and (max-width: 800px)
+{
+    .main-information{
+        width: 100%;
+        margin: 0;
+    }
+
+    .person-header{
+        flex-direction: column-reverse;
+    }
+
+    .person-header img{
+        margin: 0;
+    }
+
+    .person-header h1{
+        width: 100%;
+    }
+
+    .header-start{
+        display: none;
+    }
+
+    .back-arrow-body img {
+        display: none;
+    }
+
+}
+
+@media all and (max-width: 600px)
+{
+    #fixed-footer-div{
+        position: absolute;
+        bottom: 0;
+    }
+
+    .footer-div{
+        position: absolute;
+        bottom: 0;
+    }
+
+    body{
+        position: relative;
+        padding-bottom: 103px;
+    }
+}

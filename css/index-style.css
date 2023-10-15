@@ -8,6 +8,7 @@
 }
 
 body{
+    background: #cccccc url("../img/test-bg-4BW-blur-v2.jpg") no-repeat fixed center;
     background: #cccccc url("../img/1241qwddaw.jpg") no-repeat fixed center;
 
     background-size: cover;
@@ -193,8 +194,8 @@ header{
     transition-duration: 0.3s;
 }
 
-@media all and (max-width: 675px){
-
+@media all and (max-width: 675px)
+{
     .caption{
         margin: 0;
         width: 100%;
