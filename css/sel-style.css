@@ -98,7 +98,6 @@ header{
 .main-information{
     width: 70%;
     margin-left: 15%;
-
 }
 
 .person-header{
@@ -153,6 +152,7 @@ header{
     justify-content: center;
     background: #2d2d2d;
     margin-top: 20px;
+
 }
 
 .footer-div h3{
@@ -167,4 +167,8 @@ header{
 .footer-div h3 span {
     color: rgb(251, 57, 61);
     font-weight: 400;
+}
+
+#fixed-footer-div{
+    position: absolute;
 }

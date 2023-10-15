@@ -11,8 +11,6 @@ body{
     background: #cccccc url("../img/1241qwddaw.jpg") no-repeat fixed center;
 
     background-size: cover;
-    height: 100%;
-
 }
 
 header{
@@ -193,4 +191,61 @@ header{
 
 .header-links a:not(:hover){
     transition-duration: 0.3s;
+}
+
+@media all and (max-width: 675px){
+
+    .caption{
+        margin: 0;
+        width: 100%;
+    }
+
+    .information-img{
+        width: 100%;
+    }
+
+    .information-img img{
+        width: 100%;
+    }
+
+    .do-main-information{
+        width: 80%;
+    }
+
+    .main-information {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .information-text{
+        padding: 8px 10px;
+    }
+
+    .header-start{
+        display: none;
+    }
+    .footer-div h3{
+        box-shadow: none;
+    }
+}
+
+@media all and (max-width: 1050px)
+{
+    .do-main-information{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 0;
+    }
+
+    .main-information:nth-child(2){
+        margin-left: 0;
+    }
+
+    .main-information{
+        margin-top: 40px;
+    }
+    .footer-div{
+        position: relative;
+        margin-top: 40px;
+    }
 }
