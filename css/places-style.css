@@ -197,3 +197,51 @@ header{
 .place-info:not(:hover) h3{
     transition-duration: 0s;
 }
+
+@media all and (max-width: 1500px)
+{
+    .place-info h3 {
+        font-size: 20px;
+    }
+
+    .place-info:hover h3,
+    .place-info:hover img{
+        transition-duration: 0s;
+    }
+}
+
+@media all and (max-width: 1430px)
+{
+    .places{
+        flex-wrap: wrap;
+        top:25%;
+    }
+    .place-info:nth-child(2){
+        margin-left: 0;
+        margin-top: 5%;
+    }
+}
+
+@media all and (max-width: 800px)
+{
+    .footer-div h3{
+        font-size: 11pt;
+    }
+
+    .place-info h3 {
+        font-size: 18px;
+        font-weight: bolder;
+    }
+
+    .places{
+        top:17%;
+    }
+
+    .place-info img{
+        width: 40%;
+    }
+
+    .header-start{
+        display: none;
+    }
+}
