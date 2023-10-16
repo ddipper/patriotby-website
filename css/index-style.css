@@ -8,7 +8,7 @@
 }
 
 body{
-    background: #cccccc url("../img/test-bg-4BW-blur-v2.jpg") no-repeat fixed center;
+    /*background: #cccccc url("../img/test-bg-4BW-blur-v2.jpg") no-repeat fixed center;*/
     background: #cccccc url("../img/1241qwddaw.jpg") no-repeat fixed center;
 
     background-size: cover;
@@ -68,7 +68,7 @@ header{
 
 .main-information{
     width: 450px;
-    height: 315px;
+    height: 310px;
     /*background: #e8e8e8;
     box-shadow: 5px 5px #4b4b4b;*/
     background: rgba(238, 238, 238, 0.7);
@@ -77,6 +77,7 @@ header{
     0 2px 4px rgba(0,0,0,0.1),
     0 4px 8px rgba(0,0,0,0.1),
     0 8px 16px rgba(0,0,0,0.1);
+    overflow: hidden;
 }
 
 .main-information:nth-child(2) {
@@ -173,7 +174,7 @@ header{
 
 .main-information:hover .information-img h3{
     transition-duration: 1s;
-    padding: 145px 0;
+    padding: 140px 0;
     position: absolute;
     top: 0;
 }

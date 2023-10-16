@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800&display=swap');
+
+*{
+    font-family: "Roboto Slab", serif;
+    font-weight: 450;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /*background: #cccccc url("../img/test-bg-4BW-blur-v2.jpg") no-repeat fixed center;*/
+    background: #cccccc url("../img/1241qwddaw.jpg") no-repeat fixed center;
+
+    background-size: cover;
+}
+
+header{
+    width: 100%;
+    background: #2d2d2d;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-logo{
+    font-size: 15pt;
+    height: 100%;
+
+    padding: 15px 20px;
+}
+
+.header-links:nth-child(2)
+{
+    box-shadow: inset 0 -4px #FF3333FF;
+    height: 49px;
+}
+
+#h2-txt-we{
+    display: inline-block;
+    color: rgb(251, 57, 61);
+}
+
+#h2-txt-memory{
+    display: inline-block;
+    color: #e8e8e8;
+}
+.header-links{
+    display: block;
+    height: 100%;
+}
+
+.header-links a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 14pt;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #cccccc;
+}
+
+.header-start{
+    padding-top: 20px;
+
+}
+
+.header-ul{
+    list-style: none;
+    display: flex;
+}
+
+.back-arrow-body{
+    height: 64px;
+    width: 64px;
+    position: fixed;
+    z-index: 2;
+    padding: 5px;
+}
+
+.back-arrow-body img{
+    height: 100%;
+    width: 100%;
+}
+
+.footer-div{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    background: #2d2d2d;
+}
+
+.footer-div h3{
+    font-size: 13pt;
+    color: #cccccc;
+    font-weight: 400;
+    padding: 20px 20px;
+    text-align: center;
+    box-shadow: inset 0 -4px #FF3333FF;
+}
+
+.footer-div h3 span {
+    color: rgb(251, 57, 61);
+    font-weight: 400;
+}
+
+.places{
+    width: 80%;
+    margin-left: 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position: absolute;
+    top: 36%;
+}
+
+.place-info{
+    width: 100%;
+    max-width: 575px;
+    max-height: 224px;
+    background-color: rgba(238, 238, 238, 0.7);
+    position: relative;
+    flex-direction: column;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1),
+    0 4px 8px rgba(0,0,0,0.1),
+    0 8px 16px rgba(0,0,0,0.1);
+}
+
+.place-info:nth-child(2){
+    margin-left: 100px;
+}
+
+.place-info a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.place-info img{
+    border-top: solid #FF3333FF 2px;
+    width: 60%;
+    height: 200px;
+    object-fit: cover;
+    margin: 0 15px;
+}
+
+.place-info h3{
+    color: #2d2d2d;
+    font-weight: 800;
+    padding: 10px 5px;
+    box-shadow: inset 0 -3.5px #FF3333FF;
+    height: 69px;
+    max-width: 40%;
+    font-size: 24px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.place-text-mozur::before{
+    content: "Мозырь в годы оккупации";
+}
+
+.place-text-gara::before{
+    content: "Вёска Гара – сястра Хатынi";
+}
+
+.place-info:hover{
+    background-color: transparent;
+    transition-duration:0s;
+    box-shadow: none;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.place-info:hover img{
+    width: 0;
+    opacity: 0;
+    transition-duration: 0.5s;
+    margin: 0;
+}
+
+.place-info:hover h3{
+    max-width: 225px;
+    width: 100%;
+    color: #e8e8e8;
+    background-color: rgba(251,57,61,.8);
+    padding: 11% 30%;
+    box-shadow: none;
+    text-align: center;
+    bottom: 0;
+    transition-duration: 0.9s;
+}
+
+.place-info:not(:hover) img,
+.place-info:not(:hover),
+.place-info:not(:hover) h3{
+    transition-duration: 0s;
+}
