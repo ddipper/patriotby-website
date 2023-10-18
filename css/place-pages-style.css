@@ -23,6 +23,8 @@
     color-stop(.5, transparent), to(transparent));
 }
 
+
+
 body{
     background: #cccccc url("../img/1241qwddaw.jpg") no-repeat fixed center;
     background-size: cover;
