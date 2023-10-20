@@ -181,6 +181,9 @@ header{
     padding: 5px 0;
 }
 
+.text-caption h3{
+    color: black;
+}
 
 .text-caption-child-war{
     background-color: rgba(220, 220, 220, 0.75);
